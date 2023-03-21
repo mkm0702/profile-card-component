@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(185, 75%, 39%);
+        font-family: "Kumbh Sans", sans-serif;
+      }
+
+      hr {
+        border: 1px solid lightgrey;
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .card .img1 {
+        transform: translate(-50%, 25%);
+      }
+
+      .card .img2 {
+        transform: translate(50%, -25%);
+      }
+
+      .card1 {
+        z-index: 1;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+      }
+
+      .bottom {
+        transform: translate(0, -48px);
+      }
+
+      .top img {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+
+      .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile img {
+        border-radius: 100%;
+        border: 4px solid white;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .name h1 {
+        margin-bottom: 5px;
+      }
+      .followers {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .followers div {
+        flex-basis: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .count {
+        color: hsl(229, 23%, 23%);
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+
+      .no {
+        color: hsl(0, 0%, 59%);
+      }
+      .name h1 {
+        display: inline;
+        color: hsl(229, 23%, 23%);
+      }
+
+      .name .no {
+        font-size: 1.2em;
+        font-weight: 400;
+      }
+
+      .city {
+        color: hsl(0, 0%, 59%);
+        font-size: 0.8em;
+      }
+
+      .likes {
+        color: hsl(0, 0%, 59%);
+        font-size: 0.8em;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="card">
+        <img class="img1" src="images/bg-pattern-top.svg" alt="bg_img" />
+
+        <div class="card1">
+          <div>
+            <div class="top">
+              <img src="images/bg-pattern-card.svg" alt="bg_circle_top" />
+            </div>
+            <div class="bottom">
+              <div class="profile">
+                <img src="images/image-victor.jpg" alt="profile_pic" />
+              </div>
+              <div class="info">
+                <div class="name">
+                  <h1>Victor Crest</h1>
+                  <span class="no">26</span>
+                </div>
+                <div class="city">London</div>
+              </div>
+              <hr />
+              <div class="followers">
+                <div>
+                  <div class="count">80K</div>
+                  <div class="likes">Followers</div>
+                </div>
+                <div>
+                  <div class="count">803K</div>
+                  <div class="likes">Likes</div>
+                </div>
+                <div>
+                  <div class="count">1.4K</div>
+                  <div class="likes">Photos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="img2"
+          src="images/bg-pattern-bottom.svg"
+          alt="bg_circle_down"
+        />
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
